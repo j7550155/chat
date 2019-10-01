@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  p 採用 cookie 方式記錄使用者，請先進行登入在使用聊天室
+
+  h4 
+    a(href="/signup") 登入
+  h4 
+    a(href="/chat") 聊天室

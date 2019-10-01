@@ -1,0 +1,28 @@
+doctype html
+html
+    script(src="https://code.jquery.com/jquery-3.4.1.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/locale/zh-tw.js")
+    script(src="./javascripts/app.js")
+    link(rel='stylesheet', href='/stylesheets/style.css')
+body
+    
+    .chats
+        span 私訊將不會留下任何紀錄
+        a(href="/signout") 登出
+        .chat
+            //- .group
+            //-     .user shuan:
+            //-     .msg hi
+            //-     .time 10分鐘前
+            //- .group
+            //-     .user john:
+            //-     .msg hi~
+            //-     .time 5分鐘前
+        .message
+                input(type="text" id="name" name="name" readonly="readonly" value=name)
+                input(type="text" id="msg" name="msg" placeholder="訊息")
+                button( id="btn" value="發送") 發送
+        span.typeing
+    .users
